@@ -10,29 +10,37 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 
 	<Container>
 		<section class="feature-card__section">
-			<h3>Theme Pages</h3>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
+			<h3 id="Why">Why?</h3>
+			<p>Every small to medium-sized business and individual entrepreneur can instantly create an intelligent assistant using OpenAI’s GPTs. These assistants provide smart, convenient services to customers within minutes, enhancing user experience and engagement. But how do you capture and manage the valuable leads that your service generates?</p>
+			<p>
+				Our platform empowers businesses and individual users to effortlessly collect, manage, and utilize leads without any need for coding or technical development. With our intuitive no-code solution, you can start leveraging business opportunities immediately.
+			</p>
+
+		</section>
+		<section class="feature-card__section">
+			<h3 id="Steps">Just 3 Simple Steps</h3>
+			<p>Unlock the full potential of your OpenAI GPTs with LeadGen-GPT.</p>
 			<div class="feature-card__grid">
 				<FeatureCard
 					href="/theme/get-started"
 					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
+					title="Tell Your Requirements"
 				>
 				</FeatureCard>
 				<FeatureCard
 					href="/theme/style-guide"
 					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
+					title="Connect Your GPTs"
 				>
 				</FeatureCard>
 				<FeatureCard
 					href="/theme/style-guide"
 					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
+					title="Receive Notifications and Monitor"
 				>
 				</FeatureCard>				
 			</div>
-		</section>
+		</section>		
 	</Container>
 </Layout>
 
@@ -40,6 +48,10 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	.feature-card__section {
 		margin: var(--section-margin) auto;
 	}
+	.feature-card__section h3,
+	.feature-card__section p {
+    	text-align: center;
+	}	
 	.feature-card__grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

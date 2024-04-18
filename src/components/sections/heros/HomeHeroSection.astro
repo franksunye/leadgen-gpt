@@ -1,8 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { Container, Button } from '@components/odyssey-theme';
-import settings from '../../../config/settings.js';
-import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
 
 <Container>
@@ -13,20 +11,19 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 					Simple & Powerful AI-Powered Lead Generation & Management for <a
 						href="https://openai.com/blog/introducing-gpts"
 						target="_blank"
-						rel="noreferrer">OpenAI's GPTs</a
-					> .
+						rel="noreferrer">OpenAI's GPTs</a> .
+					With our intuitive no-code solution, you can start leveraging business opportunities immediately.
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
+					<Button href="#Why" customIcon
+						> Why?
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+					<Button href="#Steps" unelevated>Start with 3 simple steps!</Button>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
