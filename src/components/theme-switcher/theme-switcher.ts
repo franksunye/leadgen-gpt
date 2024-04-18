@@ -110,7 +110,7 @@ export class ThemeSwitcher extends LitElement {
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/classic-hero.jpg';
+			_heroImage.src = '/assets/images/home/Chat-GPT-Marketing-1.png';
 		}
 		if (theme === 'dark') {
 			_heroImage.src = '/assets/images/home/dark-hero.jpg';

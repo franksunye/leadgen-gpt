@@ -25,6 +25,12 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 					title="Style Guide"
 				>
 				</FeatureCard>
+				<FeatureCard
+					href="/theme/style-guide"
+					imgSrc="/assets/images/home/screenshots/style-guide"
+					title="Style Guide"
+				>
+				</FeatureCard>				
 			</div>
 		</section>
 	</Container>
@@ -36,7 +42,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	}
 	.feature-card__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: var(--theme-grid-gap);
 	}
 	@media (max-width: 768px) {

@@ -27,7 +27,7 @@ const {href, imgSrc, title} = Astro.props;
   .feature-card__card .feature-card__img {
     --image-shadow: 0 -0.5rem 1rem rgba(138, 138, 138, 0.12);
     margin: 0 auto;
-    width: clamp(60%, 70%, 390px);
+    width: clamp(70%, 90%, 390px);
     height: auto;
     object-fit: cover;
     /* border-radius: 1rem 1rem 0 0; */
@@ -47,7 +47,7 @@ const {href, imgSrc, title} = Astro.props;
 <div class="feature-card__card">
   <a class="feature-card__link" href={href}>
     <div class="featured-card__content">
-      <h3 class="feature-card__title">{title}</h3>
+      <p class="feature-card__title">{title}</p>
       <!-- I would like to swap this out with Astro's Image integration soon but was having some issues with it at the moment so we're going old school here. -->
       <picture>
         <source srcset={`${imgSrc}.webp`} type="image/webp" >
