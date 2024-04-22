@@ -6,7 +6,7 @@ export const footerSocials = [
   },
   {
     name: 'Github',
-    url: 'https://github.com/franksunye/leadgen-gpts',
+    url: 'https://github.com/franksunye/leadgen-gpt',
     icon: "mdi:github",
   },
 ]
