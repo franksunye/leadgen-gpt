@@ -13,9 +13,6 @@ const { footerSocials, footerLists, copyrightName, background, color, showLittle
   <Container>
     <div class="footer-grid__container">
       <div class="footer-brand__container">
-        <div>
-          <slot name="logo" />
-        </div>
         <ul class="footer-socials__list">
           {
             footerSocials.map((social) => (
@@ -98,10 +95,12 @@ const { footerSocials, footerLists, copyrightName, background, color, showLittle
   .footer-copyright__container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
   }
   .footer-copyright__container p {
     font-size: var(--font-size-sm);
+    text-align: center;
   }
   @media (max-width: 768px) {
     .footer-grid__container :first-child {

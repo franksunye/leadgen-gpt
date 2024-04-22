@@ -3,6 +3,8 @@ import { Container, FeatureCard } from '@components/odyssey-theme';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import PlanCard from '../components/cards/PlanCard.astro';
+
 ---
 
 <Layout>
@@ -40,7 +42,24 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				>
 				</FeatureCard>				
 			</div>
-		</section>		
+		</section>
+		<section class="plan-card__section">
+			<h3 id="Pricing">Our Plans</h3>
+			<div class="plan-card__grid">
+			   <PlanCard
+				 href="/#"
+				 title="Free $0/mo forver"
+				 description="Good for individuals, with all the necessary features."
+				 features={['3 Forms', '100 AI Calls for form design', 'Unlimited Submissions', '3 Widget Integrated Slack, Email, and WeCom', 'Unlimited Team Members']}
+			   />
+			   <PlanCard
+				 href="/#"
+				 title="Premium $9.9/mo"
+				 description="For freelancers and startups."
+				 features={['Unlimited AI Generated Form Design','Unlimited Forms', 'Email support', 'Webhooks and more Widgets comming, CRM/Martech Stack']}
+			   />
+			</div>
+		   </section>		
 	</Container>
 </Layout>
 
@@ -60,6 +79,23 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	@media (max-width: 768px) {
 		.feature-card__grid {
 			grid-template-columns: 1fr;
+		}
+	}
+	.plan-card__section {
+    margin: var(--section-margin) auto;
+}
+.plan-card__section h3 {
+		text-align: center;
+	}
+.plan-card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--theme-grid-gap);
+ }
+
+	@media (max-width: 768px) {
+		.plan-card__grid {
+		grid-template-columns: 1fr;
 		}
 	}
 </style>

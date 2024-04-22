@@ -1,0 +1,58 @@
+---
+const { href, title, description, features } = Astro.props;
+---
+
+<style>
+ .plan-card__card {
+    background-color: var(--theme-surface-1);
+    color: var(--theme-on-surface-1);
+    border-radius: var(--theme-shape-radius);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+ }
+ .plan-card__link {
+    display: block;
+    text-decoration: none;
+ }
+ .plan-card__title {
+    font-family: var(--theme-font-family-sans);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+ }
+ .plan-card__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+ }
+ .plan-card__features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+ }
+ .plan-card__features li {
+    padding: 0.5rem 0;
+ }
+ .plan-card__button {
+    background-color: var(--theme-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+ }
+</style>
+
+<div class="plan-card__card">
+ <a class="plan-card__link" href={href}>
+    <p class="plan-card__title">{title}</p>
+    <p class="plan-card__description">{description}</p>
+    <ul class="plan-card__features">
+      {features.map(feature => (
+        <li>{feature}</li>
+      ))}
+    </ul>
+    <a class="plan-card__button" href={href}>Learn More</a>
+ </a>
+</div>
