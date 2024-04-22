@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/lg-banner.png" alt="https://www.leadgen-gpt.com/ Banner">
+<img src="assets/lg-banner.png" alt="https://www.leadgen-gpt.com/ Banner" style="border: 1px solid #ccc;">
 </p>
 
 <br/>
