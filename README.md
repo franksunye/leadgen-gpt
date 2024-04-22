@@ -1,71 +1,34 @@
 <p align="center">
-  <img src="assets/gh-banner.png" alt="Odyssey Theme Banner">
+  <img src="assets/lg-banner.png" alt="https://www.leadgen-gpt.com/ Banner">
 </p>
 
 <br/>
 <div align="center">
-  <a href="https://twitter.com/jaydanurwin">
+  <a href="https://twitter.com/franksunye">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0">
-    <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
-  </a>
 </div>
 <br/>
 
-# Odyssey Theme
+# LeadGen-GPT
 
-Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
+Simple & Powerful AI-Powered Lead Generation & Management for OpenAI's GPTs . With our intuitive no-code solution, you can start leveraging business opportunities immediately.
 
-## Features
+## Why?
 
-<p align="center">
-  <img src="assets/lh-screenshot.png" alt="Screenshot of perfect score in Lighthouse benchmark">
-</p>
+Every small to medium-sized business and individual entrepreneur can instantly create an intelligent assistant using OpenAI’s GPTs. These assistants provide smart, convenient services to customers within minutes, enhancing user experience and engagement. But how do you capture and manage the valuable leads that your service generates?
 
+Our platform empowers businesses and individual users to effortlessly collect, manage, and utilize leads without any need for coding or technical development. With our intuitive no-code solution, you can start leveraging business opportunities immediately.
 
-- ✅ **A perfect score in Lighthouse**
-- ✅ **Blazing fast performance thanks to Astro 🚀**
-- ✅ **A Full Featured Blog with Tagging**
-- ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
-- ✅ **Responsive, mobile-friendly landing pages**
-- ✅ **SEO Best Practices (Open Graph, Canonical URLs, sitemap)**
-- ✅ **Performant Local Fonts Setup**
-- ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
-- ✅ **A package of ready-to-use UI components**
+## How?
 
+Transform your GPTs into powerful lead generation tools with LeadGen-GPT. This guide outlines a straightforward, three-step process to enhance your digital services with advanced AI capabilities, ensuring you capture and manage leads effectively and efficiently.
 
-## Demo
+1. Define Your Requirements
+2. Connect Your GPTs
+3. Receive Notifications and Monitor Your Leads
 
-View a [live demo](https://odyssey-theme.sapling.supply/) of the Odyssey Theme.
-
-## Documentation
-
-1. View the [Theme Setup Guide](https://odyssey-theme.sapling.supply/theme/theme-setup)
-2. View the [Customizing the Theme Guide](https://odyssey-theme.sapling.supply/theme/customizing-odyssey)
-
-## Usage
-
-```bash
-cd theme
-
-npm install
-
-npm start
-```
-
-## Deploy
-
-Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
-
-Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
-
-## Sponsor
-
-If you find this theme useful, please consider donating to support the continued development of it with the link below
-
-[Donate to Odyssey Theme](https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0)
 
 ## Support
 
-Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner, keeping in mind this template is offered for free as is on GitHub.
+Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner.
