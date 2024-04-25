@@ -21,15 +21,6 @@ const seo = {
 ---
 <Layout seo={seo}> 
   <div class="post-header__container"> 
-    <ul class="post-tags__list">
-      {allTagsData.map(tag => (
-        <li class="post-tags__tag">
-          <a href={`/blog/tags/${tag.slug}`}>
-            {tag.title}
-          </a>
-        </li>
-      ))}
-    </ul>
     <h1>{title}</h1>
     <p class="post-layout__date">
       <time><em>{publishDate}</em></time>
@@ -40,12 +31,21 @@ const seo = {
     <article id="article">
         <slot></slot>
     </article>
+    <ul class="post-tags__list">
+      {allTagsData.map(tag => (
+        <li class="post-tags__tag">
+          <a href={`/blog/tags/${tag.slug}`}>
+            # {tag.title}
+          </a>
+        </li>
+      ))}
+    </ul>
   </Container>
 </Layout>
 
 <style>
   #article {
-    padding-bottom: 3rem;
+    padding-bottom: 0.5rem;
   }
   .post-header__container {
     max-width: var(--theme-blog-post-header-width);
@@ -55,10 +55,18 @@ const seo = {
   .post-tags__list {
     margin: 1rem auto;
     padding: 0;
+    padding-bottom: 1rem;    
     list-style: none;
+    display: flex; /* 使用 Flexbox */
+    flex-wrap: wrap; /* 如果标签超出容器宽度，自动换行 */    
   }
   .post-tags__tag {
     text-transform: uppercase;
+    margin-right: 1rem; /* 可以根据需要调整标签之间的间距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 10px; /* 设置边框为圆形 */
+    padding: 0.1rem 1rem; /* 标签内边距 */
+    background-color: #f0f0f0; /* 背景颜色 */
   }
   .post-tags__tag a {
     font-size: var(--font-size-sm);
