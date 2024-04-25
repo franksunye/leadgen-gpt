@@ -15,8 +15,4 @@ export const nav = [
 		title: 'Blog',
 		slug: '/blog',
 	},
-	{
-		title: 'Join the Waitlist',
-		slug: 'https://getwaitlist.com/waitlist/16284',
-	}
 ];

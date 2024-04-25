@@ -1,5 +1,5 @@
 ---
-import { Header, Footer } from '@components/odyssey-theme';
+import { Header, Button,Footer } from '@components/odyssey-theme';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
@@ -21,6 +21,7 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<Logo />
 		</span>
+		<Button slot="action-item" href="https://getwaitlist.com/waitlist/16284" newTab="yes">Join the Waitlist</Button>
 	</Header>
 	<div id="page">
 		<slot />
