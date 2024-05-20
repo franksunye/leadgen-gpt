@@ -83,19 +83,19 @@ import PlanCard from '../components/cards/PlanCard.astro';
 	}
 	.plan-card__section {
     margin: var(--section-margin) auto;
-}
-.plan-card__section h3 {
-		text-align: center;
 	}
-.plan-card__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--theme-grid-gap);
- }
-
-	@media (max-width: 768px) {
-		.plan-card__grid {
-		grid-template-columns: 1fr;
+	.plan-card__section h3 {
+			text-align: center;
 		}
+	.plan-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+
+		@media (max-width: 768px) {
+			.plan-card__grid {
+			grid-template-columns: 1fr;
+			}
 	}
 </style>
