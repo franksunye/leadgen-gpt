@@ -62,11 +62,11 @@ async function submitUrls(urls) {
         body: JSON.stringify(payload),
     });
 
-  if (response.ok) {
-    console.log('URLs submitted successfully');
-  } else {
-    console.error('Error submitting URLs:', response.statusText);
-  }
+    if (response.ok) {
+        console.log('URLs submitted successfully');
+    } else {
+        console.error('Error submitting URLs:', response.statusText);
+    }
 }
 
 const newBlogPostUrls = getBlogPostUrls();
