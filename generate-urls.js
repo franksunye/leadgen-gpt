@@ -14,7 +14,7 @@ function getBlogPostUrls() {
     console.log('Scanning blog posts directory...');
     const files = fs.readdirSync(blogPostsDir);
     console.log(`Found ${files.length} blog posts.`);
-    return files.map(file => `${siteUrl}/posts/${path.parse(file).name}`);
+    return files.map(file => `${siteUrl}/blog/posts/${path.parse(file).name}`);
 }
 
 async function submitUrls(urls) {
