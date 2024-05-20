@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const blogPostsDir = path.join(__dirname, 'src/pages/blog/posts');
-const siteUrl = 'https://www.leadgen-gpt.com/';
+const siteUrl = 'https://www.leadgen-gpt.com';
 
 function getBlogPostUrls() {
     console.log('Scanning blog posts directory...');
