@@ -67,7 +67,6 @@ async function submitUrls(urls) {
   } else {
     console.error('Error submitting URLs:', response.statusText);
   }
-
 }
 
 const newBlogPostUrls = getBlogPostUrls();
