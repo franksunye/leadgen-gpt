@@ -1,6 +1,7 @@
 {
 	"name": "LeadGen-GPT Web",
 	"version": "0.0.2",
+	"type": "module",
 	"private": false,
 	"scripts": {
 		"dev": "astro dev",

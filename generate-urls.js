@@ -1,6 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-const fetch = require('node-fetch');
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import fs from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const blogPostsDir = path.join(__dirname, 'src/pages/blog/posts');
 const siteUrl = 'https://www.leadgen-gpt.com/';
@@ -10,37 +15,37 @@ function getBlogPostUrls() {
     const files = fs.readdirSync(blogPostsDir);
     console.log(`Found ${files.length} blog posts.`);
     return files.map(file => `${siteUrl}/posts/${path.parse(file).name}`);
-  }
+}
 
 async function submitUrls(urls) {
-  const apiKey = '909d02eacbeb4db79775a48c41642530';
-  const keyLocation = `${siteUrl}/${apiKey}.txt`;
-  const payload = {
-    host: siteUrl.replace('https://', ''),
-    key: apiKey,
-    keyLocation: keyLocation,
-    urlList: urls
-  };
+    const apiKey = '909d02eacbeb4db79775a48c41642530';
+    const keyLocation = `${siteUrl}/${apiKey}.txt`;
+    const payload = {
+        host: siteUrl.replace('https://', ''),
+        key: apiKey,
+        keyLocation: keyLocation,
+        urlList: urls
+    };
 
-  const response = await fetch('https://api.indexnow.org/IndexNow', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8',
-    },
-    body: JSON.stringify(payload),
-  });
+    const response = await fetch('https://api.indexnow.org/IndexNow', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json; charset=utf-8',
+        },
+        body: JSON.stringify(payload),
+    });
 
-  if (response.ok) {
-    console.log('URLs submitted successfully');
-  } else {
-    console.error('Error submitting URLs:', response.statusText);
-  }
+    if (response.ok) {
+        console.log('URLs submitted successfully');
+    } else {
+        console.error('Error submitting URLs:', response.statusText);
+    }
 }
 
 const newBlogPostUrls = getBlogPostUrls();
 console.log('New blog post URLs:', newBlogPostUrls);
 if (newBlogPostUrls.length > 0) {
-  submitUrls(newBlogPostUrls);
+    submitUrls(newBlogPostUrls);
 } else {
-  console.log('No new blog posts found. Nothing to submit to IndexNow.');
+    console.log('No new blog posts found. Nothing to submit to IndexNow.');
 }
