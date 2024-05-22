@@ -9,7 +9,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"format": "npx prettier -w .",
-		"postbuild": "node generate-urls-gb.js"
+		"postbuild": "node generate-urls.js"
 	},
 	"devDependencies": {
 		"@astrojs/lit": "^4.0.1",
@@ -25,10 +25,6 @@
 		"prettier-plugin-astro": "^0.0.12"
 	},
 	"dependencies": {
-		"@google-cloud/local-auth": "^3.0.1",
-		"@vercel/speed-insights": "^1.0.10",
-		"google-auth-library": "^9.10.0",
-		"googleapis": "^137.1.0",
-		"node-fetch": "^3.3.2"
+		"@vercel/speed-insights": "^1.0.10"
 	}
 }
