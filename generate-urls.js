@@ -40,33 +40,6 @@ async function submitUrls(urls) {
     } else {
         console.error('Error submitting URLs:', response.statusText);
     }
-
-    return files.map(file => `${siteUrl}/posts/${path.parse(file).name}`);
-}
-
-async function submitUrls(urls) {
-    const apiKey = '909d02eacbeb4db79775a48c41642530';
-    const keyLocation = `${siteUrl}/${apiKey}.txt`;
-    const payload = {
-        host: siteUrl.replace('https://', ''),
-        key: apiKey,
-        keyLocation: keyLocation,
-        urlList: urls
-    };
-
-    const response = await fetch('https://api.indexnow.org/IndexNow', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json; charset=utf-8',
-        },
-        body: JSON.stringify(payload),
-    });
-
-    if (response.ok) {
-        console.log('URLs submitted successfully');
-    } else {
-        console.error('Error submitting URLs:', response.statusText);
-    }
 }
 
 const newBlogPostUrls = getBlogPostUrls();
