@@ -48,12 +48,14 @@ async function submitToIndexNow(urls) {
 }
 
 async function submitToGoogle(urls) {
-    console.log('GOOGLE_APPLICATION_CREDENTIALS:', process.env.GOOGLE_APPLICATION_CREDENTIALS);
+    console.log('GOOGLE_APPLICATION_CREDENTIALS:', process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64);
 
-    const keyFilePath = path.join(__dirname, process.env.GOOGLE_APPLICATION_CREDENTIALS);
+    const serviceAccountBase64 = process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64;
+    const serviceAccountJson = Buffer.from(serviceAccountBase64, 'base64').toString('utf-8');
+    const serviceAccount = JSON.parse(serviceAccountJson);
 
     const auth = new GoogleAuth({
-        keyFile: keyFilePath,
+        credentials: serviceAccount,
         scopes: ['https://www.googleapis.com/auth/indexing'],
     });
 
