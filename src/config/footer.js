@@ -12,4 +12,13 @@ export const footerSocials = [
 ]
 
 export const footerLists = [
+	{
+		title: 'Company',
+		items: [
+			{
+				title: 'ZISO.CC',
+				slug: 'https://ziso.cc',
+			},
+		],
+	},
 ];

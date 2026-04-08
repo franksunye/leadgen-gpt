@@ -1,5 +1,9 @@
 export const nav = [
 	{
+		title: 'ZISO.CC',
+		slug: 'https://ziso.cc',
+	},
+	{
 		title: 'Why',
 		slug: '/#Why',
 	},
